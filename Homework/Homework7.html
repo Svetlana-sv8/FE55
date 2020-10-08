@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action= "/action.php"target="_blank"method= "post">
+        <p> 
+            <input type="text" name="username" placeholder="Ваше Имя" />
+        </p>
+        <p>
+            <input type= "tel"name="tel" placeholder="(000)-000-00-00"maxlength="10"/>><br/>
+        </p>
+        <p> 
+            <input type="email" name="email" required placeholder="email" maxlength="20"/>
+        </p>
+        <p> 
+            <input type="date" name="day" max="2019-10-13"/>
+        ></p>
+        <h2> > Ваше сообщение </h2>
+        <p> 
+            <textarea name="message" rows="10" cols="30" maxlength="60"> </textarea> 
+        </p>
+        <p>>
+             <button>Отправить</button> 
+            </p>
+    
+    </form>  
+</body>
+</html>
