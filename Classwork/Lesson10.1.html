@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+</head>
+<style>
+/*div p{
+    background: #E5E02B;
+}*/
+/* стили задаются для всех p, если их родитель div*/
+/*div > p{
+    background: #E5E02B;}*/
+    /*Стили задаются для всех р, если их родитель div и больше на ранг р*/
+  /*div +p +p +p{
+    background: #E5E02B;
+    }*/
+    /*это сравнивается несмежным селектором, который является div ~ p{}.Это означает, что найдите р. Нопоследующие div на пути не работает для стилей*/
+    div ~ p{
+    background: #E5E02B;
+}
+</style>
+<body>
+    <div>
+        <h2>Lorem ipsum</h2>
+    </div>
+    <p>color</p>
+    <p>color</p>
+    <p>color</p>
+
+    <div>
+    <p>color</p>
+    <p>color</p>
+     
+    </div>
+    <p>color</p>
+    <p>color</p>
+    
+</body>
+</html>
